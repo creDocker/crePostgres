@@ -21,7 +21,7 @@ LABEL Name="Postgres for CRE" \
       Build_=$BUILD_TAG 
 
 
-RUN add-apt-repository ppa:ubuntugis/ppa
+#RUN add-apt-repository ppa:ubuntugis/ppa
 
 RUN apt-get update && \
     apt-get install -y -q --no-install-recommends \
