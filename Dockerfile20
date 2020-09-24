@@ -9,8 +9,8 @@ ARG BUILD_TAG=latest
 
 #ENV DEBIAN_FRONTEND noninteractive
 #ENV INITRD No
-ENV POSTGRES_VERSION 11
-#10.10
+ENV POSTGRES_VERSION 12
+#12.2
 
 LABEL Name="Postgres for CRE" \
       CRE=$CRE_VERSION \ 
@@ -21,7 +21,7 @@ LABEL Name="Postgres for CRE" \
       Build_=$BUILD_TAG 
 
 
-RUN add-apt-repository ppa:ubuntugis/ppa
+#RUN add-apt-repository ppa:ubuntugis/ppa
 
 RUN apt-get update && \
     apt-get install -y -q --no-install-recommends \
