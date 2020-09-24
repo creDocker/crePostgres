@@ -4,11 +4,21 @@ Todo:
 =====
 * Access rights GRANT for user not enough (i.e. Schema) - i.e. tambora
 * dump directory?
-* Daily dump - Permission of directory cre/postgres/dump/db/....
+* Daily dump - Permission of directory cre/postgres/dump/db/....    check write access before init db
 * Check init db
  * init from bz2-file -> bzip2 -dk file.bz2  / gz -> tar -xvzf file.tar.gz
+ * BUG: init of multiple dbs. !!
 * Citus
 * POSTGRES_EXT allows to access DB for user globally by proxy/url (todo: specify list of dbs) 
+
+* Vector Space NN
+ * cube extension  https://www.postgresql.org/docs/10/cube.html
+ * https://github.com/netrasys/pgANN
+ * https://dba.stackexchange.com/questions/163207/quick-nearest-neighbor-search-in-the-150-dimensional-space
+
+ * CREATE EXTENSION cube;  https://www.postgresql.org/docs/9.4/cube.html
+ 
+
 
 
 

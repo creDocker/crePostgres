@@ -110,18 +110,18 @@ if [ "true" == "$initDb" ] ; then
    fi 
 fi
 
+##
+${POSTGRESQL_BIN}/psql -v ON_ERROR_STOP=1 --username=postgres --dbname="{{$postgresDb}}" -c "CREATE EXTENSION IF NOT EXISTS fuzzystrmatch "
+${POSTGRESQL_BIN}/psql -v ON_ERROR_STOP=1 --username=postgres --dbname="{{$postgresDb}}" -c "CREATE EXTENSION IF NOT EXISTS cube "
+
 ## Install (or Upgrade) Postgis extensions
 {{ if $CurrentContainer.Env.POSTGIS_VERSION }}
   {{ $postgisVerson := $CurrentContainer.Env.POSTGIS_VERSION }}
   echo "Upgrade database: {{ $postgresDb }} to PostGIS version: {{ $postgisVerson }}"
   ${POSTGRESQL_BIN}/psql -v ON_ERROR_STOP=1 --username=postgres --dbname="{{$postgresDb}}" -c 'CREATE EXTENSION IF NOT EXISTS postgis VERSION "{{ $postgisVerson }}" '
   ${POSTGRESQL_BIN}/psql -v ON_ERROR_STOP=1 --username=postgres --dbname="{{$postgresDb}}" -c "ALTER EXTENSION postgis UPDATE TO '{{ $postgisVerson }}' "
-
   ${POSTGRESQL_BIN}/psql -v ON_ERROR_STOP=1 --username=postgres --dbname="{{$postgresDb}}" -c 'CREATE EXTENSION IF NOT EXISTS postgis_topology VERSION "{{ $postgisVerson }}" '
   ${POSTGRESQL_BIN}/psql -v ON_ERROR_STOP=1 --username=postgres --dbname="{{$postgresDb}}" -c "ALTER EXTENSION postgis_topology UPDATE TO '{{ $postgisVerson }}' "
-
-  ${POSTGRESQL_BIN}/psql -v ON_ERROR_STOP=1 --username=postgres --dbname="{{$postgresDb}}" -c "CREATE EXTENSION IF NOT EXISTS fuzzystrmatch "
-
   ${POSTGRESQL_BIN}/psql -v ON_ERROR_STOP=1 --username=postgres --dbname="{{$postgresDb}}" -c 'CREATE EXTENSION IF NOT EXISTS postgis_tiger_geocoder VERSION "{{ $postgisVerson }}" '
   ${POSTGRESQL_BIN}/psql -v ON_ERROR_STOP=1 --username=postgres --dbname="{{$postgresDb}}" -c "ALTER EXTENSION postgis_tiger_geocoder UPDATE TO '{{ $postgisVerson }}' "
 

@@ -10,6 +10,7 @@ ARG BUILD_TAG=latest
 #ENV DEBIAN_FRONTEND noninteractive
 #ENV INITRD No
 ENV POSTGRES_VERSION 10
+#10.10
 
 LABEL Name="Postgres for CRE" \
       CRE=$CRE_VERSION \ 
