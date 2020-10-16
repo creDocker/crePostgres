@@ -22,6 +22,19 @@ Todo:
 
 
 
+---
+Add new container for pgadmin
+https://www.pgadmin.org/download/pgadmin-4-apt/
+
+How to store csv...
+https://www.postgresqltutorial.com/export-postgresql-table-to-csv-file/
+COPY persons TO 'C:\tmp\persons_db.csv' DELIMITER ',' CSV HEADER;
+---
+
+
+
+
+
  
 
 
