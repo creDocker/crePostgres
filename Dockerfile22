@@ -1,11 +1,11 @@
 # Adapted from https://github.com/partlab/docker/blob/master/ubuntu-postgresql/Dockerfile
 # and https://github.com/docker-library/postgres/blob/master/9.5/docker-entrypoint.sh
-FROM tamboraorg/creubuntu:2020.0
+FROM tamboraorg/creubuntu:0.2022
 MAINTAINER Michael Kahle <michael.kahle@yahoo.de>
 
-ARG BUILD_YEAR=2020
+ARG BUILD_YEAR=2022
 ARG BUILD_MONTH=0
-ARG BUILD_TAG=2020.0
+ARG BUILD_TAG=0.2022
 
 #ENV DEBIAN_FRONTEND noninteractive
 #ENV INITRD No
