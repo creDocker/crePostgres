@@ -11,14 +11,15 @@ Todo:
 * Citus
 * POSTGRES_EXT allows to access DB for user globally by proxy/url (todo: specify list of dbs) 
 
-* Vector Space NN
- * cube extension  https://www.postgresql.org/docs/10/cube.html
- * https://github.com/netrasys/pgANN
- * https://dba.stackexchange.com/questions/163207/quick-nearest-neighbor-search-in-the-150-dimensional-space
 
- * CREATE EXTENSION cube;  https://www.postgresql.org/docs/9.4/cube.html
- 
 
+* RabbitMQ
+ https://github.com/gmr/On-Rabbits-and-Elephants
+ https://livebook.manning.com/book/rabbitmq-in-depth/chapter-10/71
+
+* https://blog.timescale.com/blog/top-5-postgresql-extensions/amp/
+ ZomboDB, TimescaleDB
+ https://github.com/zombodb/zombodb
 
 
 
@@ -30,6 +31,17 @@ How to store csv...
 https://www.postgresqltutorial.com/export-postgresql-table-to-csv-file/
 COPY persons TO 'C:\tmp\persons_db.csv' DELIMITER ',' CSV HEADER;
 ---
+
+
+
+ Done:
+ =====
+  * CREATE EXTENSION cube;  https://www.postgresql.org/docs/9.4/cube.html  (max 100 components)  
+   Usage:
+   * Vector Space NN
+    * cube extension  https://www.postgresql.org/docs/10/cube.html
+    * https://github.com/netrasys/pgANN
+    * https://dba.stackexchange.com/questions/163207/quick-nearest-neighbor-search-in-the-150-dimensional-space 
 
 
 
