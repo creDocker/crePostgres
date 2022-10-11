@@ -5,7 +5,7 @@ name: dockerhub:2020.0
 on:
   push:
     branches:
-      - 'master'
+      - 'main'
 
 jobs:
   docker:

@@ -5,7 +5,7 @@ name: dockerhub:2022.0
 on:
   push:
     branches:
-      - 'master'
+      - 'main'
 
 jobs:
   docker:

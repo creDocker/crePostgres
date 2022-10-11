@@ -5,7 +5,7 @@ name: dockerhub:2016.0
 on:
   push:
     branches:
-      - 'master'
+      - 'main'
 
 jobs:
   docker:
