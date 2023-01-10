@@ -1,0 +1,35 @@
+# This is a basic workflow to help you get started with Actions
+
+name: versions:2022.0
+
+on:
+  push:
+    branches:
+      - 'main'
+  workflow_dispatch:
+  schedule:
+    # * is a special character in YAML so you have to quote this string 1:00  weekly,Saturday,1:00 #m h d/m m d/w 
+    - cron:  '30 2 * * 6'
+
+jobs:
+  versions:
+    runs-on: ubuntu-latest
+    container:
+      image: tamboraorg/crepostgres:2022.0
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set ownership
+        run: |
+          # this is to fix GIT not liking owner of the checkout dir
+          chown -R $(id -u):$(id -g) $PWD
+      - name: cat version.txt
+        run: (cat /cre/versions.txt) 
+      - name: cp version.txt
+#        run: (cp /cre/versions.txt cre/versions/versions_2022.txt) 
+        run: (cut -f2,3 /cre/versions.txt > cre/versions/versions_2022.txt)
+      - name: Submit changes       
+        uses: EndBug/add-and-commit@v9
+        with:
+#          pull: '--rebase --autostash ...'
+          add: 'cre/versions/versions_2022.txt'
+          tag_push: '--force'
