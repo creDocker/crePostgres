@@ -1,0 +1,7 @@
+creBuild 	 2023.01
+ creUbuntu 	 22.04.1 LTS
+  OpenSSL 3.0.2 15 Mar 2022 (Library: OpenSSL 3.0.2 15 Mar 2022)
+  Java 	 openjdk version "11.0.17" 2022-10-18
+  Python3 	 Python 3.10.6
+ crePostgres 	 postgres (PostgreSQL) 14.6 (Ubuntu 14.6-0ubuntu0.22.04.1)
+  psql 	 psql (PostgreSQL) 14.6 (Ubuntu 14.6-0ubuntu0.22.04.1)
