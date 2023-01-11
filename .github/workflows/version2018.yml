@@ -16,6 +16,9 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: tamboraorg/crepostgres:2018.0
+      # https://github.com/actions/checkout/issues/1014
+      # https://github.com/actions/checkout/issues/956
+      options: --user root
     steps:
       - uses: actions/checkout@v3
       - name: Set ownership
