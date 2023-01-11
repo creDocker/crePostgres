@@ -1,0 +1,7 @@
+creBuild 	 2023.01
+ creUbuntu 	 20.04.5 LTS
+  OpenSSL 1.1.1f  31 Mar 2020
+  Java 	 openjdk version "1.8.0_352"
+  Python3 	 Python 3.8.10
+ crePostgres 	 postgres (PostgreSQL) 12.13 (Ubuntu 12.13-0ubuntu0.20.04.1)
+  psql 	 psql (PostgreSQL) 12.13 (Ubuntu 12.13-0ubuntu0.20.04.1)
