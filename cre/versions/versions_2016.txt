@@ -1,5 +1,6 @@
 creBuild 	 2023.01
  creUbuntu 	 16.04.7 LTS
+  UbuntuName 	 xenial
   OpenSSL 1.0.2g  1 Mar 2016
   Java 	 openjdk version "1.8.0_292"
   Python3 	 Python 3.5.2
