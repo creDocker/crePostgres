@@ -1,5 +1,5 @@
 creBuild 	 2023.03
- creUbuntu 	 20.04.5 LTS
+ creUbuntu 	 20.04.6 LTS
   UbuntuName 	 focal
   OpenSSL 1.1.1f  31 Mar 2020
   Java 	 openjdk version "11.0.18" 2023-01-17
