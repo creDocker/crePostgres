@@ -34,12 +34,12 @@ jobs:
         with:
           file: ./Dockerfile22
           push: true
-          tags: tamboraorg/crepostgres:check22
+          tags: credocker/crepostgres:check22
 
       -
         name: Test
         run: |
-          docker run tamboraorg/crepostgres:check22 /cre/postgres-test.sh  
+          docker run credocker/crepostgres:check22 /cre/postgres-test.sh  
       -
         name: Build and push
         id: docker_push
@@ -47,5 +47,5 @@ jobs:
         with:
           file: ./Dockerfile22
           push: true
-          tags: tamboraorg/crepostgres:2022.0 
+          tags: credocker/crepostgres:2022.0 
 
