@@ -15,7 +15,7 @@ jobs:
   versions:
     runs-on: ubuntu-latest
     container:
-      image: tamboraorg/crepostgres:2018.0
+      image: credocker/crepostgres:2018.0
       # https://github.com/actions/checkout/issues/1014
       # https://github.com/actions/checkout/issues/956
       options: --user root
