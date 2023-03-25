@@ -2,6 +2,7 @@ creBuild 	 2023.03
  creUbuntu 	 22.04.2 LTS
   UbuntuName 	 jammy
   OpenSSL 3.0.2 15 Mar 2022 (Library: OpenSSL 3.0.2 15 Mar 2022)
+  msmtp version 1.8.16
   Java 	 openjdk version "19.0.2" 2023-01-17
   Python3 	 Python 3.10.6
  crePostgres 	 postgres (PostgreSQL) 14.7 (Ubuntu 14.7-0ubuntu0.22.04.1)
