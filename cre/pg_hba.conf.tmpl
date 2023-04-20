@@ -15,6 +15,7 @@ hostssl 	 all 	 postgres 	 {{ $proxyNetwork.Gateway }}/32 	 md5
       {{ else }}
 #hostssl 	 all 	 postgres 	 {{ $proxyNetwork.Gateway }}/32 	 md5
       {{ end }} 
+host 	 all 	 all 	 {{ $proxyNetwork.Gateway }}/32 	 reject
      {{ end }}  
     {{ end }}   
    {{ end }}
