@@ -4,6 +4,6 @@ creBuild 	 2024.01
   OpenSSL 1.1.1f  31 Mar 2020
   Java 	 openjdk version "11.0.21" 2023-10-17
   Python3 	 Python 3.8.10
-   Flask 	 Flask 3.0.0
+   Flask 	 Flask 3.0.1
  crePostgres 	 postgres (PostgreSQL) 12.17 (Ubuntu 12.17-0ubuntu0.20.04.1)
   psql 	 psql (PostgreSQL) 12.17 (Ubuntu 12.17-0ubuntu0.20.04.1)
