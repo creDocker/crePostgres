@@ -3,7 +3,7 @@ creBuild 	 2024.06
   UbuntuName 	 jammy
   OpenSSL 3.0.2 15 Mar 2022 (Library: OpenSSL 3.0.2 15 Mar 2022)
   msmtp version 1.8.16
-  Java 	 openjdk version "17.0.10" 2024-01-16
+  Java 	 openjdk version "17.0.11" 2024-04-16
   Python3 	 Python 3.10.12
    Flask 	 
  crePostgres 	 postgres (PostgreSQL) 14.12 (Ubuntu 14.12-0ubuntu0.22.04.1)
