@@ -6,5 +6,5 @@ creBuild 	 2024.08
   Java 	 openjdk version "17.0.12" 2024-07-16
   Python3 	 Python 3.10.12
    Flask 	 
- crePostgres 	 postgres (PostgreSQL) 14.12 (Ubuntu 14.12-0ubuntu0.22.04.1)
-  psql 	 psql (PostgreSQL) 14.12 (Ubuntu 14.12-0ubuntu0.22.04.1)
+ crePostgres 	 postgres (PostgreSQL) 14.13 (Ubuntu 14.13-0ubuntu0.22.04.1)
+  psql 	 psql (PostgreSQL) 14.13 (Ubuntu 14.13-0ubuntu0.22.04.1)
