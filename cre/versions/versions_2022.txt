@@ -1,5 +1,5 @@
 creBuild 	 2024.09
- creUbuntu 	 22.04.4 LTS
+ creUbuntu 	 22.04.5 LTS
   UbuntuName 	 jammy
   OpenSSL 3.0.2 15 Mar 2022 (Library: OpenSSL 3.0.2 15 Mar 2022)
   msmtp version 1.8.16
