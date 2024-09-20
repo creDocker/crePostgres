@@ -22,6 +22,15 @@ Todo:
  https://github.com/zombodb/zombodb
 
 
+* possible extensions
+ * https://www.marktechpost.com/2024/06/11/a-new-era-ai-databases-postgresql-with-pgvectorscale-outperforms-pinecone-and-cuts-costs-by-75-with-new-open-source-extensions/
+  * https://github.com/timescale/pgvectorscale
+  * (https://github.com/timescale/pgai)
+
+ * https://github.com/sraoss/pg_ivm  (make materialized views up-to-date)
+
+
+
 
 ---
 Add new container for pgadmin
@@ -31,6 +40,11 @@ How to store csv...
 https://www.postgresqltutorial.com/export-postgresql-table-to-csv-file/
 COPY persons TO 'C:\tmp\persons_db.csv' DELIMITER ',' CSV HEADER;
 ---
+
+Security:
+#openssl
+https://adamtheautomator.com/postgresql-ssl/
+#kerberos?
 
 
 
