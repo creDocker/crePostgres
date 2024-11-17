@@ -3,7 +3,7 @@ creBuild 	 2024.11
   UbuntuName 	 noble
   OpenSSL 3.0.13 30 Jan 2024 (Library: OpenSSL 3.0.13 30 Jan 2024)
   msmtp version 1.8.24
-  Java 	 openjdk version "21.0.4" 2024-07-16
+  Java 	 openjdk version "21.0.5" 2024-10-15
   Python3 	 Python 3.12.3
    Flask 	 
  crePostgres 	 postgres (PostgreSQL) 16.4 (Ubuntu 16.4-0ubuntu0.24.04.2)
