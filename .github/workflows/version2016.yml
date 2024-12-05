@@ -21,7 +21,9 @@ jobs:
       options: --user root
     steps:
       - name: find node
-        run: (ls -l /usr/local/bin)
+        run: (ls -l /__e/node20/bin/node)
+      - name: find node2
+        run: (ls -l /__e)
       #- name: node16 vs node20
       #  run: (cd $RUNNER_HOME/actions-runner/externals; mv node20 node20.bak; ln -s node16 node20) 
 
