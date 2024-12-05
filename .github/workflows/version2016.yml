@@ -13,16 +13,17 @@ on:
 
 jobs:
   versions:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     container:
       image: credocker/crepostgres:2016.0
       # https://github.com/actions/checkout/issues/1014
       # https://github.com/actions/checkout/issues/956
       options: --user root
     steps:
-
-      - name: node16 vs node20
-        run: (cd $RUNNER_HOME/actions-runner/externals; mv node20 node20.bak; ln -s node16 node20) 
+      - name: find node
+        run: (ls -l /usr/local/bin)
+      #- name: node16 vs node20
+      #  run: (cd $RUNNER_HOME/actions-runner/externals; mv node20 node20.bak; ln -s node16 node20) 
 
       - uses: actions/checkout@v3
       - name: Set ownership
