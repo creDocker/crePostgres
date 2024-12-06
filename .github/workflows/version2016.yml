@@ -13,40 +13,18 @@ on:
 
 jobs:
   versions:
-    runs-on: ubuntu-20.04
-    container:
-      image: credocker/crepostgres:2016.0
-      # https://github.com/actions/checkout/issues/1014
-      # https://github.com/actions/checkout/issues/956
-      options: --user root
+    runs-on: ubuntu-latest
     steps:
-      - name: find node
-        run: (ls -l /__e/node20/bin/node)
-      - name: find node2
-        run: (ls -l /__e)
-      #- name: node16 vs node20
-      #  run: (cd $RUNNER_HOME/actions-runner/externals; mv node20 node20.bak; ln -s node16 node20) 
-        env:
-         ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
-         ACTIONS_RUNNER_FORCED_INTERNAL_NODE_VERSION: node16
-         ACTIONS_RUNNER_FORCE_ACTIONS_NODE_VERSION: node16   
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Set ownership
         run: |
           # this is to fix GIT not liking owner of the checkout dir
           chown -R $(id -u):$(id -g) $PWD
-      - name: cat version.txt
-        run: (cat /cre/versions.txt) 
-      - name: cp version.txt
-#        run: (cp /cre/versions.txt cre/versions/versions_2016.txt) 
-        run: (cut -f2,3 /cre/versions.txt > cre/versions/versions_2016.txt)
-      - name: Submit changes 
-        env:
-         ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
-         ACTIONS_RUNNER_FORCED_INTERNAL_NODE_VERSION: node16
-         ACTIONS_RUNNER_FORCE_ACTIONS_NODE_VERSION: node16      
+      - name: run docker in docker
+        run: (docker container run --volume ./cre/versions:/cre/versions credocker/crepostgres:2016.0 /cre/update-versions.sh 2016) 
+      - name: Submit changes       
         uses: EndBug/add-and-commit@v9
         with:
 #          pull: '--rebase --autostash ...'
-          add: 'cre/versions/versions_2016.txt'
+          add: 'cre/versions/versions_2016.txt cre/versions/requirements_2016.txt'
           tag_push: '--force'
