@@ -14,8 +14,6 @@ on:
 jobs:
   versions:
     runs-on: ubuntu-latest
-    container:
-      image: credocker/crepostgres:2018.0
       # https://github.com/actions/checkout/issues/1014
       # https://github.com/actions/checkout/issues/956
       options: --user root
@@ -25,15 +23,12 @@ jobs:
         run: |
           # this is to fix GIT not liking owner of the checkout dir
           chown -R $(id -u):$(id -g) $PWD
-      - name: cat version.txt
-        run: (cat /cre/versions.txt) 
-      - name: cp version.txt
-#        run: (cp /cre/versions.txt cre/versions/versions_2018.txt) 
-        run: (cut -f2,3 /cre/versions.txt > cre/versions/versions_2018.txt)
+
+      - name: run docker in docker
+        run: (docker container run --volume ./cre/versions:/cre/versions credocker/crepostgres:2018.0 /cre/update-versions.sh 2018) 
       - name: Submit changes       
         uses: EndBug/add-and-commit@v9
         with:
-#         pull: '--rebase --autostash ...'
-          add: 'cre/versions/versions_2018.txt'
+#          pull: '--rebase --autostash ...'
+          add: 'cre/versions/versions_2018.txt cre/versions/requirements_2018.txt'
           tag_push: '--force'
-
