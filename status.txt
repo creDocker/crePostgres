@@ -29,7 +29,11 @@ Todo:
 
  * https://github.com/sraoss/pg_ivm  (make materialized views up-to-date)
 
-
+https://m.winfuture.de/news/148427
+https://opensource.microsoft.com/blog/2025/01/23/documentdb-open-source-announcement/
+https://github.com/microsoft/documentdb
+ * pg_documentdb_core
+ * pg_documentdb_api
 
 
 ---
