@@ -1,8 +1,8 @@
-creBuild 	 2025.01
+creBuild 	 2025.02
  creUbuntu 	 20.04.6 LTS
   UbuntuName 	 focal
   OpenSSL 1.1.1f  31 Mar 2020
-  Java 	 openjdk version "11.0.25" 2024-10-15
+  Java 	 openjdk version "11.0.26" 2025-01-21
   Python3 	 Python 3.8.10
    Flask 	 Flask 3.0.3
  crePostgres 	 postgres (PostgreSQL) 12.22 (Ubuntu 12.22-0ubuntu0.20.04.1)
