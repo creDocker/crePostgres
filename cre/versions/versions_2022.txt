@@ -5,6 +5,8 @@ creBuild 	 2025.03
   msmtp version 1.8.16
   Java 	 openjdk version "17.0.14" 2025-01-21
   Python3 	 Python 3.10.12
+   numpy 	 2.2.4
+   pandas 	 2.2.3
    Flask 	 
  crePostgres 	 postgres (PostgreSQL) 14.17 (Ubuntu 14.17-0ubuntu0.22.04.1)
   psql 	 psql (PostgreSQL) 14.17 (Ubuntu 14.17-0ubuntu0.22.04.1)
