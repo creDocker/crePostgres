@@ -3,7 +3,7 @@ creBuild 	 2025.05
   UbuntuName 	 jammy
   OpenSSL 3.0.2 15 Mar 2022 (Library: OpenSSL 3.0.2 15 Mar 2022)
   msmtp version 1.8.16
-  Java 	 openjdk version "17.0.14" 2025-01-21
+  Java 	 openjdk version "17.0.15" 2025-04-15
   Python3 	 Python 3.10.12
    numpy 	 2.2.5
    pandas 	 2.2.3
