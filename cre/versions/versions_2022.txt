@@ -6,7 +6,7 @@ creBuild 	 2025.08
   Java 	 openjdk version "17.0.16" 2025-07-15
   Python3 	 Python 3.10.12
    numpy 	 2.2.6
-   pandas 	 2.3.1
+   pandas 	 2.3.2
    Flask 	 
  crePostgres 	 postgres (PostgreSQL) 14.18 (Ubuntu 14.18-0ubuntu0.22.04.1)
   psql 	 psql (PostgreSQL) 14.18 (Ubuntu 14.18-0ubuntu0.22.04.1)
