@@ -8,7 +8,7 @@ Todo:
 * Check init db
  * init from bz2-file -> bzip2 -dk file.bz2  / gz -> tar -xvzf file.tar.gz
  * BUG: init of multiple dbs. !!
-* Citus
+* Citus  https://www.heise.de/news/Cloud-Native-DB-Citus-13-bringt-PostgreSQL-17-in-verteilte-Cluster-Umgebungen-10277774.html
 * POSTGRES_EXT allows to access DB for user globally by proxy/url (todo: specify list of dbs) 
 
 
