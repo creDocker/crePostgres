@@ -1,4 +1,4 @@
-creBuild 	 2025.09
+creBuild 	 2025.10
  creUbuntu 	 24.04.3 LTS
   UbuntuName 	 noble
   OpenSSL 3.0.13 30 Jan 2024 (Library: OpenSSL 3.0.13 30 Jan 2024)
@@ -7,7 +7,7 @@ creBuild 	 2025.09
   Python3 	 Python 3.12.3
    numpy 	 1.26.4
    scipy 	 1.11.4
-   pandas 	 2.3.2
+   pandas 	 2.3.3
    Flask 	 
  crePostgres 	 postgres (PostgreSQL) 16.10 (Ubuntu 16.10-0ubuntu0.24.04.1)
   psql 	 psql (PostgreSQL) 16.10 (Ubuntu 16.10-0ubuntu0.24.04.1)
