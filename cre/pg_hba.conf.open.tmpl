@@ -1,0 +1,48 @@
+# Current Name : {{ $CurrentContainer.Name }}
+# PostgreSQL Client Authentication Configuration File
+# ===================================================
+# TYPE 	 DATABASE 	 USER 	 ADDRESS 	 METHOD
+# Database administrative login by Unix domain socket
+local 	 all 	 postgres 	 peer
+{{ if $CurrentContainer.Env.CRE_SUBDOMAIN }}
+ {{ range $proxydomain, $containers := groupByMulti $ "Env.CRE_DOMAIN" "," }}
+  {{ range $container := $containers }}
+   {{ range $knownNetwork := $CurrentContainer.Networks }}
+    {{ range $proxyNetwork := $container.Networks }}
+     {{ if (and (ne $proxyNetwork.Name "ingress") (or (eq $knownNetwork.Name $proxyNetwork.Name) (eq $knownNetwork.Name "host"))) }}
+      {{ if $container.Env.POSTGRES_EXT }}
+hostssl 	 all 	 postgres 	 {{ $proxyNetwork.Gateway }}/32 	 md5
+#hostssl 	 all 	 postgres 	 10.255.255.255/24 	 md5
+      {{ else }}
+#hostssl 	 all 	 postgres 	 {{ $proxyNetwork.Gateway }}/32 	 md5
+#hostssl 	 all 	 postgres 	 10.255.255.255/24 	 md5
+      {{ end }} 
+host 	 all 	 all 	 {{ $proxyNetwork.Gateway }}/32 	 reject
+     {{ end }}  
+    {{ end }}   
+   {{ end }}
+  {{ end }}
+ {{ end }}
+{{ end }}
+
+{{ range $postgresDb, $containers := groupByMulti $ "Env.POSTGRES_DB" "," }}
+## add db: {{ $postgresDb }}
+ {{ range $index, $container := $containers }}
+
+  {{ range $knownNetwork := $CurrentContainer.Networks }}
+   {{ range $containerNetwork := $container.Networks }}
+    {{ if (and (ne $containerNetwork.Name "ingress") (or (eq $knownNetwork.Name $containerNetwork.Name) (eq $knownNetwork.Name "host"))) }}
+     {{ if $container.Env.POSTGRES_USER }}
+host 	 {{ $postgresDb }} 	 {{ $container.Env.POSTGRES_USER }} 	 {{ $containerNetwork.IP }}/24 	 md5
+     {{ else }}
+host 	 {{ $postgresDb }} 	 all 	 {{ $containerNetwork.IP }}/24 	 md5
+     {{ end }}
+    {{ end }} 
+   {{ end }} 
+  {{ end }} 
+
+ {{ end }} 
+##end of all containers
+{{ end }} 
+##end of all databases
+
