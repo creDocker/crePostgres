@@ -1,4 +1,4 @@
-creBuild 	 2025.11
+creBuild 	 2025.12
  creUbuntu 	 20.04.6 LTS
   UbuntuName 	 focal
   OpenSSL 1.1.1f  31 Mar 2020
