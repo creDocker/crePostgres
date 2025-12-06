@@ -1,4 +1,4 @@
-creBuild 	 2025.11
+creBuild 	 2025.12
  creUbuntu 	 22.04.5 LTS
   UbuntuName 	 jammy
   OpenSSL 3.0.2 15 Mar 2022 (Library: OpenSSL 3.0.2 15 Mar 2022)
@@ -8,5 +8,5 @@ creBuild 	 2025.11
    numpy 	 2.2.6
    pandas 	 2.3.3
    Flask 	 
- crePostgres 	 postgres (PostgreSQL) 14.19 (Ubuntu 14.19-0ubuntu0.22.04.1)
-  psql 	 psql (PostgreSQL) 14.19 (Ubuntu 14.19-0ubuntu0.22.04.1)
+ crePostgres 	 postgres (PostgreSQL) 14.20 (Ubuntu 14.20-0ubuntu0.22.04.1)
+  psql 	 psql (PostgreSQL) 14.20 (Ubuntu 14.20-0ubuntu0.22.04.1)
