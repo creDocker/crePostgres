@@ -3,5 +3,6 @@ backup: /cre/gen-template.sh /cre/postgres-daily.sh.tmpl
 dbs: /cre/gen-template.sh /cre/postgres-add-dbs.sh.tmpl /cre/postgres-add-dbs.sh
 secure: /cre/gen-template.sh /cre/pg_hba.conf.tmpl /cre/pg_hba.sh
 open: /cre/gen-template.sh /cre/pg_hba.conf.open.tmpl
+close: /cre/gen-template.sh /cre/pg_hba.conf.close.tmpl
 weekly: watch -n 600007 /cre/postgres-weekly.sh
 daily: watch -n 85007 /cre/postgres-daily.sh
