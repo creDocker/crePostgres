@@ -40,9 +40,13 @@ if [ $(${POSTGRESQL_BIN}/psql -tAc "SELECT 1 FROM pg_database WHERE datname='{{$
  echo "... dump database {{ $postgresDb }} finished."
  #to restore use: pg_restore --username=postgres --dbname={{ $postgresDb }} /cre/postgres/dumps/{{ $postgresDb }}/database.daily.dump.zip 
  ## end compressed
- ## optionally copy dumpfile to other server (daily -> update)
- ## later add reading of database.update.dump (from other server) here 
-
+ if [ -e /cre/postgres/dumps/{{ $postgresDb }}/database.daily.dump.zip ]
+ then
+   if [ -d /cre/glue ]
+   then
+     cp -f /cre/postgres/dumps/{{ $postgresDb }}/database.daily.dump.zip /cre/glue/db.dump.zip 
+   fi
+ fi 
 else
  echo "Database missing: {{ $postgresDb }}"
 fi
