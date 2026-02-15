@@ -1,5 +1,5 @@
 creBuild 	 2026.02
- creUbuntu 	 24.04.3 LTS
+ creUbuntu 	 24.04.4 LTS
   UbuntuName 	 noble
   OpenSSL 3.0.13 30 Jan 2024 (Library: OpenSSL 3.0.13 30 Jan 2024)
   msmtp version 1.8.24
