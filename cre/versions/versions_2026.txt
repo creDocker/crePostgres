@@ -1,0 +1,14 @@
+creBuild 	 2026.04
+ creUbuntu 	 24.04.4 LTS
+  UbuntuName 	 noble
+  OpenSSL 3.0.13 30 Jan 2024 (Library: OpenSSL 3.0.13 30 Jan 2024)
+  msmtp version 1.8.24
+  Java 	 openjdk version "21.0.10" 2026-01-20
+  Python3 	 Python 3.12.3
+   uv 	 
+   uv2 	 
+   numpy 	 2.4.4
+   pandas 	 3.0.2
+   Flask 	 
+ crePostgres 	 postgres (PostgreSQL) 16.13 (Ubuntu 16.13-0ubuntu0.24.04.1)
+  psql 	 psql (PostgreSQL) 16.13 (Ubuntu 16.13-0ubuntu0.24.04.1)
