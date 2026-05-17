@@ -7,8 +7,8 @@ creBuild 	 2026.05
   Python3 	 Python 3.12.3
    uv 	 
    uv2 	 
-   numpy 	 2.4.4
-   pandas 	 3.0.2
+   numpy 	 2.4.5
+   pandas 	 3.0.3
    Flask 	 
  crePostgres 	 postgres (PostgreSQL) 16.13 (Ubuntu 16.13-0ubuntu0.24.04.1)
   psql 	 psql (PostgreSQL) 16.13 (Ubuntu 16.13-0ubuntu0.24.04.1)
