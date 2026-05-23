@@ -8,5 +8,5 @@ creBuild 	 2026.05
    numpy 	 2.2.6
    pandas 	 2.3.3
    Flask 	 
- crePostgres 	 postgres (PostgreSQL) 14.22 (Ubuntu 14.22-0ubuntu0.22.04.1)
-  psql 	 psql (PostgreSQL) 14.22 (Ubuntu 14.22-0ubuntu0.22.04.1)
+ crePostgres 	 postgres (PostgreSQL) 14.23 (Ubuntu 14.23-0ubuntu0.22.04.1)
+  psql 	 psql (PostgreSQL) 14.23 (Ubuntu 14.23-0ubuntu0.22.04.1)
