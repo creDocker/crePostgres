@@ -1,4 +1,4 @@
-creBuild 	 2026.08
+creBuild 	 2026.09
  creUbuntu 	 26.04.1 LTS
   UbuntuName 	 resolute
   OpenSSL 3.5.5 27 Jan 2026 (Library: OpenSSL 3.5.5 27 Jan 2026)
@@ -7,7 +7,7 @@ creBuild 	 2026.08
   Python3 	 Python 3.14.4
    uv 	 
    uv2 	 
-   numpy 	 2.5.2
+   numpy 	 2.5.3
    pandas 	 3.0.5
    Flask 	 Flask 3.1.3
  crePostgres 	 postgres (PostgreSQL) 18.6 (Ubuntu 18.6-0ubuntu0.26.04.1)
